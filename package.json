@@ -1,6 +1,6 @@
 {
   "name": "styled-jsx-plugin-stylus-nib",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Stylus support for styled-jsx and Next.js with integrated nib",
   "main": "index.js",
   "repository": "https://www.github.com/alin23/styled-jsx-plugin-stylus-nib",
@@ -8,6 +8,7 @@
   "license": "MIT",
   "dependencies": {
     "nib": "^1.1.2",
+    "rupture": "^0.7.1",
     "stylus": "^0.54.5"
   }
 }

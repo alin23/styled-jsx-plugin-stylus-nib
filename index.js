@@ -1,5 +1,6 @@
 const stylus = require('stylus')
 const nib = require('nib')
+const rupture = require('rupture')
 
 const addPlaceholders = (css) => css.replace(/%%(styled-jsx-placeholder-\d+)%%/g, '_$1_')
 
@@ -11,6 +12,8 @@ module.exports = (css, settings) => {
     let renderer = stylus(cssWithPlaceholders.toString())
         .use(nib())
         .import('nib')
+        .use(rupture())
+        .import('rupture')
 
     if (typeof settings.paths === 'object') {
         let path = 0
